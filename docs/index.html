@@ -159,12 +159,12 @@
             <p class="install-meta">Version 1.0 &middot; Universal &middot; macOS 14.2 or later</p>
             <ol class="steps">
               <li>Unzip the download and move AirSound to Applications.</li>
-              <li>Right-click AirSound and choose Open the first time. macOS warns that the build is not notarized.</li>
+              <li>Open AirSound once. If macOS blocks it, go to System Settings &rarr; Privacy &amp; Security and choose Open Anyway. The build is not notarized.</li>
               <li>Click the menu bar icon, press Start sharing, and allow System Audio Recording. Right-click the icon any time to stop or quit.</li>
             </ol>
             <details>
-              <summary>macOS says it can't check AirSound.</summary>
-              <p>This build is ad hoc signed, not notarized with a paid Apple Developer ID. Open System Settings, go to Privacy &amp; Security, find the message about AirSound, and choose Open Anyway. You only need to do this once. You can also build from source in Xcode.</p>
+              <summary>macOS won't open AirSound.</summary>
+              <p>This build is ad hoc signed, not notarized with a paid Apple Developer ID. Open System Settings, go to Privacy &amp; Security, scroll to Security, and choose Open Anyway next to AirSound. You only need to do this once. On older macOS versions you can also right-click the app and choose Open. You can also build from source in Xcode.</p>
             </details>
           </div>
 
@@ -204,7 +204,7 @@
           </details>
           <details>
             <summary>macOS won't open the app.</summary>
-            <p>The release is ad hoc signed, not notarized. Right-click the app and choose Open, or allow it in System Settings &rarr; Privacy &amp; Security. The source is on GitHub if you prefer to build it yourself.</p>
+            <p>The release is ad hoc signed, not notarized. Open System Settings &rarr; Privacy &amp; Security and choose Open Anyway. On older macOS versions you can also right-click the app and choose Open. The source is on GitHub if you prefer to build it yourself.</p>
           </details>
           <details>
             <summary>Does Air Sound record my audio?</summary>

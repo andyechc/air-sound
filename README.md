@@ -14,9 +14,9 @@ it receives.
 [iPhone IPA for AltStore](https://github.com/andyechc/air-sound/releases/latest/download/AirSound-unsigned.ipa) ·
 [Website](https://andyechc.is-a.dev/air-sound/)
 
-The macOS build is ad hoc signed, not notarized. On first launch, right-click
-the app and choose **Open**, or allow it under System Settings → Privacy &
-Security. The iPhone build is unsigned so AltStore can sign it with your Apple ID.
+The macOS build is ad hoc signed, not notarized. If macOS blocks the first
+launch, open System Settings → Privacy & Security and choose **Open Anyway**.
+The iPhone build is unsigned so AltStore can sign it with your Apple ID.
 
 ## How it works
 
