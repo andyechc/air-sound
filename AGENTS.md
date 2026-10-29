@@ -47,6 +47,13 @@ No Developer ID is available, so the Mac build must be ad hoc signed and the
 Gatekeeper warning documented on the site. AltStore re-signs the IPA with the
 user's Apple ID; a free account needs a 7-day refresh.
 
+AltStore source manifest: `docs/altstore.json`, served at
+`https://andyechc.is-a.dev/air-sound/altstore.json`. It follows the UTM-style
+schema (`name`, `identifier`, `apps`, `versions`, `downloadURL`, `size`,
+`minOSVersion`, etc.) and points at the latest release asset. Keep `version`,
+`date`, and `size` in sync with the published IPA; the deep link is
+`altstore://source?url=...`.
+
 ## Discovery lifecycle
 
 - `MacDiscovery.start()` is idempotent and runs on launch; `IphoneModel` also

@@ -97,6 +97,17 @@ mkdir -p Payload && cp -R path/to/AirSoundiPhone.app Payload/AirSound.app
 zip -qry AirSound-unsigned.ipa Payload
 ```
 
+## AltStore source
+
+AltStore can install and refresh Air Sound directly from a self-hosted source:
+
+- Source URL: https://andyechc.is-a.dev/air-sound/altstore.json
+- Deep link: altstore://source?url=https://andyechc.is-a.dev/air-sound/altstore.json
+
+The manifest points at the latest release asset, so a new release with the same
+asset name updates existing installs. Keep its `version` and `size` in sync with
+the IPA.
+
 ## Website
 
 The landing page and privacy page live in `docs/` and are served by GitHub Pages

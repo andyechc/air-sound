@@ -1,0 +1,36 @@
+{
+  "name": "Air Sound",
+  "identifier": "com.andyechc.airsound.source",
+  "subtitle": "System audio from your Mac to your iPhone.",
+  "website": "https://andyechc.is-a.dev/air-sound/",
+  "tintColor": "#0090e9",
+  "featuredApps": [
+    "com.andyechc.airsound.ios"
+  ],
+  "apps": [
+    {
+      "name": "Air Sound",
+      "bundleIdentifier": "com.andyechc.airsound.ios",
+      "developerName": "andyechc",
+      "subtitle": "Stream your Mac's system audio over Wi-Fi.",
+      "localizedDescription": "Air Sound sends your Mac's system audio to your iPhone over your local Wi-Fi. Listen on the speaker, AirPods, Bluetooth, or AirPlay. No accounts, no cloud, no cables.",
+      "iconURL": "https://andyechc.is-a.dev/air-sound/assets/icon-1024.png",
+      "tintColor": "#0090e9",
+      "minOSVersion": "17.0",
+      "screenshotURLs": [
+        "https://andyechc.is-a.dev/air-sound/assets/ios-playing-light.png",
+        "https://andyechc.is-a.dev/air-sound/assets/ios-discovery-light.png"
+      ],
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-10-29T15:37:23Z",
+          "localizedDescription": "First release. Menu bar Mac app, automatic iPhone discovery, Connect by IP fallback, background playback.",
+          "downloadURL": "https://github.com/andyechc/air-sound/releases/latest/download/AirSound-unsigned.ipa",
+          "size": 288897
+        }
+      ]
+    }
+  ],
+  "news": []
+}
