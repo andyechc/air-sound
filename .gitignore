@@ -1,0 +1,17 @@
+# macOS / Xcode
+.DS_Store
+xcuserdata/
+*.xcuserstate
+DerivedData/
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# SwiftPM
+.build/
+.swiftpm/
+Package.resolved
+
+# Air-toolchain artifacts
+/build/
+/**/*.xcodeproj/xcshareddata/xcuserdata/

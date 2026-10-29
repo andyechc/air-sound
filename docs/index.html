@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Air Sound: your Mac's audio on your iPhone</title>
+  <meta name="description" content="Air Sound sends your Mac's system audio to your iPhone over your local Wi-Fi. Listen on the speaker, AirPods, Bluetooth, or AirPlay. No accounts, no cloud, no cables.">
+  <link rel="canonical" href="https://andyechc.github.io/air-sound/">
+  <meta name="theme-color" content="#f2f8fd" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b0c0e" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Air Sound: your Mac's audio on your iPhone">
+  <meta property="og:description" content="System audio from your Mac, sent over your own Wi-Fi. Listen on the iPhone speaker, AirPods, Bluetooth, or AirPlay.">
+  <meta property="og:url" content="https://andyechc.github.io/air-sound/">
+  <meta property="og:image" content="https://andyechc.github.io/air-sound/assets/icon-1024.png">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="1024">
+  <meta property="og:image:alt" content="Air Sound app icon">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="Air Sound, back to top">
+        <img src="assets/icon-64.png" width="30" height="30" alt="">
+        <span>Air Sound</span>
+      </a>
+      <nav aria-label="Primary">
+        <a href="#how">How it works</a>
+        <a href="#install">Install</a>
+        <a href="https://github.com/andyechc/air-sound">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="kicker">macOS to iPhone &middot; local Wi-Fi</p>
+          <h1>Your Mac's sound,<br>on your iPhone.</h1>
+          <p class="lede">Air Sound sends your Mac's system audio to your iPhone over your own Wi-Fi. Listen on the speaker, AirPods, Bluetooth, or AirPlay. No cables, accounts, or cloud.</p>
+          <div class="cta-row">
+            <a class="button button-primary" href="https://github.com/andyechc/air-sound/releases/latest/download/AirSound-macOS.zip">Download for macOS</a>
+            <a class="button button-quiet" href="#iphone">iPhone via AltStore</a>
+          </div>
+          <p class="hero-meta">Free &middot; Version 1.0 &middot; macOS 14.2 or later &middot; Universal</p>
+        </div>
+
+        <div class="hero-visual">
+          <div class="phone-frame">
+            <picture>
+              <source srcset="assets/ios-playing-dark.png" media="(prefers-color-scheme: dark)">
+              <img src="assets/ios-playing-light.png" width="900" height="1956" alt="Air Sound on iPhone, playing audio from Andy's MacBook and routed to AirPods Pro.">
+            </picture>
+          </div>
+          <p class="hero-caption">Plays through the iPhone speaker, AirPods, Bluetooth, or AirPlay.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="how">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker">How it works</p>
+          <h2>Two taps, then it's playing.</h2>
+          <p class="section-lede">The Mac captures. The iPhone plays. Both stay on your local network.</p>
+        </div>
+
+        <article class="step">
+          <div class="step-copy">
+            <p class="step-num">01</p>
+            <h3>Start sharing from the menu bar.</h3>
+            <p>Click the radio icon, give this Mac a name, and press Start sharing. macOS asks once for System Audio Recording. The panel also shows the host and port if discovery is blocked.</p>
+          </div>
+          <div class="step-media mac-frame">
+            <picture>
+              <source srcset="assets/mac-idle-dark.png" media="(prefers-color-scheme: dark)">
+              <img src="assets/mac-idle-light.png" width="920" height="552" loading="lazy" alt="Air Sound menu bar panel on macOS with a Mac name, idle format, and the Start sharing button.">
+            </picture>
+          </div>
+        </article>
+
+        <article class="step step-reverse">
+          <div class="step-copy">
+            <p class="step-num">02</p>
+            <h3>Tap your Mac on the iPhone.</h3>
+            <p>Open Air Sound. Your Mac appears under On your network. Tap it and playback starts. If your Wi-Fi hides devices from each other, paste the host and port shown in the Mac panel.</p>
+          </div>
+          <div class="step-media phone-frame">
+            <picture>
+              <source srcset="assets/ios-discovery-dark.png" media="(prefers-color-scheme: dark)">
+              <img src="assets/ios-discovery-light.png" width="900" height="1956" loading="lazy" alt="Air Sound on iPhone listing two Macs on the local network, with a Connect by IP field below.">
+            </picture>
+          </div>
+        </article>
+
+        <p class="step-result"><strong>That's it.</strong> Playback keeps going in the background and follows the iPhone's current output.</p>
+      </div>
+    </section>
+
+    <section class="specs-section">
+      <div class="wrap">
+        <div class="specs-head">
+          <div>
+            <p class="kicker">Under the hood</p>
+            <h2>Local by design.</h2>
+          </div>
+          <p class="specs-intro">Two native apps and a shared Swift package. The Mac captures system audio with a Core Audio process tap, the iPhone receives raw PCM over TCP, and Bonjour handles discovery. There is no relay.</p>
+        </div>
+
+        <dl class="spec-grid">
+          <div class="spec">
+            <dt>Capture</dt>
+            <dd>Core Audio process tap, excluding Air Sound's own output. Requires macOS 14.2 or later.</dd>
+          </div>
+          <div class="spec">
+            <dt>Format</dt>
+            <dd>Float32 stereo at the Mac's output-device rate. The iPhone's audio engine converts to its own output.</dd>
+          </div>
+          <div class="spec">
+            <dt>Transport</dt>
+            <dd><code>_airsound._tcp</code> for discovery, then one TCP connection from the iPhone to the Mac.</dd>
+          </div>
+          <div class="spec">
+            <dt>Buffer</dt>
+            <dd>Playback starts after about 110 ms is queued. If the backlog passes about 3 s, the iPhone re-primes instead of letting latency grow.</dd>
+          </div>
+          <div class="spec">
+            <dt>Permissions</dt>
+            <dd>System Audio Recording on macOS. Local Network on iOS. Nothing else is requested.</dd>
+          </div>
+          <div class="spec">
+            <dt>Privacy</dt>
+            <dd>Audio is buffered in memory and never written to disk. No account, telemetry, or cloud service.</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="install" id="install">
+      <div class="wrap">
+        <div class="install-head">
+          <p class="kicker">Install</p>
+          <h2>Get it running.</h2>
+          <p class="section-lede">The Mac app is a direct download. The iPhone app is an unsigned build for AltStore.</p>
+        </div>
+
+        <div class="install-grid">
+          <div class="install-col">
+            <h3>macOS</h3>
+            <p class="install-label">Direct download</p>
+            <a class="button button-primary" href="https://github.com/andyechc/air-sound/releases/latest/download/AirSound-macOS.zip">Download for macOS</a>
+            <p class="install-meta">Version 1.0 &middot; Universal &middot; macOS 14.2 or later</p>
+            <ol class="steps">
+              <li>Unzip the download and move AirSound to Applications.</li>
+              <li>Right-click AirSound and choose Open the first time. macOS warns that the build is not notarized.</li>
+              <li>Click the menu bar icon, press Start sharing, and allow System Audio Recording. Right-click the icon any time to stop or quit.</li>
+            </ol>
+            <details>
+              <summary>macOS says it can't check AirSound.</summary>
+              <p>This build is ad hoc signed, not notarized with a paid Apple Developer ID. Open System Settings, go to Privacy &amp; Security, find the message about AirSound, and choose Open Anyway. You only need to do this once. You can also build from source in Xcode.</p>
+            </details>
+          </div>
+
+          <div class="install-col" id="iphone">
+            <h3>iPhone</h3>
+            <p class="install-label">AltStore</p>
+            <a class="button button-quiet" href="https://github.com/andyechc/air-sound/releases/latest/download/AirSound-unsigned.ipa">Download the IPA</a>
+            <p class="install-meta">Version 1.0 &middot; Unsigned &middot; iOS 17 or later</p>
+            <ol class="steps">
+              <li>Install AltStore on your iPhone from <a href="https://altstore.io/">altstore.io</a>.</li>
+              <li>Open the IPA in AltStore, or use My Apps and the + button.</li>
+              <li>AltStore signs it with your Apple ID. A free Apple ID needs a refresh every 7 days.</li>
+            </ol>
+            <details>
+              <summary>Why is the iPhone build unsigned?</summary>
+              <p>It is not distributed through the App Store. AltStore re-signs the IPA with your own Apple ID, so the build ships unsigned. The source is in the same repository as the Mac app.</p>
+            </details>
+          </div>
+        </div>
+
+        <p class="install-note">Both devices need to be on the same network. A VPN or client isolation can block discovery. In that case, use Connect by IP with the address shown in the Mac panel.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap faq-layout">
+        <div class="faq-head">
+          <p class="kicker">Questions</p>
+          <h2>Good to know.</h2>
+          <p class="section-lede">The things that come up most often when pairing the two apps.</p>
+        </div>
+
+        <div class="faq">
+          <details>
+            <summary>My iPhone doesn't list my Mac.</summary>
+            <p>Check that both devices are on the same Wi-Fi, that Air Sound has Local Network access in Settings &rarr; Privacy &amp; Security &rarr; Local Network, and that the Mac is sharing. If your network isolates clients or you are on a VPN, tap Connect by IP and enter the host and port shown in the Mac panel.</p>
+          </details>
+          <details>
+            <summary>macOS won't open the app.</summary>
+            <p>The release is ad hoc signed, not notarized. Right-click the app and choose Open, or allow it in System Settings &rarr; Privacy &amp; Security. The source is on GitHub if you prefer to build it yourself.</p>
+          </details>
+          <details>
+            <summary>Does Air Sound record my audio?</summary>
+            <p>No. Audio is captured into memory, sent to the iPhone, and played. It is never written to disk. The Mac app also excludes its own output from the tap.</p>
+          </details>
+          <details>
+            <summary>Does it work with AirPods and AirPlay?</summary>
+            <p>Yes. The iPhone plays through its current output route, so the speaker, wired headphones, Bluetooth, AirPods, and AirPlay all work. Routing stays on iOS.</p>
+          </details>
+          <details>
+            <summary>Can I use it outside my home network?</summary>
+            <p>No. The iPhone connects directly to the Mac over the local network. There is no relay or cloud service, so both devices need to reach each other.</p>
+          </details>
+          <details>
+            <summary>Why is the iPhone app not on the App Store?</summary>
+            <p>It is distributed as an unsigned IPA for AltStore, not through the App Store. The Mac app is a direct download. Both are built from the same source in this repository.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <img src="assets/icon-64.png" width="24" height="24" alt="">
+        <span>Air Sound</span>
+        <span class="footer-note">Mac audio, on your iPhone.</span>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/andyechc/air-sound">GitHub</a>
+        <a href="https://github.com/andyechc/air-sound/releases">Releases</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

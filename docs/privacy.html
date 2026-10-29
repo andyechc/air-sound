@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy: Air Sound</title>
+  <meta name="description" content="How Air Sound handles audio, network access, and data. No accounts, no analytics, no recording.">
+  <link rel="canonical" href="https://andyechc.github.io/air-sound/privacy.html">
+  <meta name="theme-color" content="#f2f8fd" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b0c0e" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="Air Sound, back to the home page">
+        <img src="assets/icon-64.png" width="30" height="30" alt="">
+        <span>Air Sound</span>
+      </a>
+      <nav aria-label="Primary">
+        <a href="index.html#how">How it works</a>
+        <a href="index.html#install">Install</a>
+        <a href="https://github.com/andyechc/air-sound">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <article class="wrap page">
+      <p class="kicker">Privacy</p>
+      <h1>What Air Sound does with your data.</h1>
+      <p class="updated">Last updated October 29, 2026.</p>
+
+      <p>Air Sound is a pair of native apps that send audio from your Mac to your iPhone over your local network. It has no accounts, no analytics, no advertising, and no cloud service.</p>
+
+      <h2>Audio</h2>
+      <p>The Mac app captures system audio only while you have sharing turned on. The audio is held in memory, sent directly to the iPhone, and played there. It is never written to disk and never sent to a server. The Mac app excludes its own output from the capture.</p>
+
+      <h2>Network</h2>
+      <p>The Mac advertises itself on the local network with Bonjour. The iPhone connects directly to the Mac over TCP. Audio does not pass through Air Sound servers because there are none. Both devices need to reach each other on the same network.</p>
+
+      <h2>Permissions</h2>
+      <ul>
+        <li><strong>System Audio Recording (macOS):</strong> used to capture the audio that plays on the Mac.</li>
+        <li><strong>Local Network (iOS):</strong> used to find the Mac and open the connection.</li>
+      </ul>
+      <p>No microphone, camera, contacts, location, or other data is requested.</p>
+
+      <h2>Data collection</h2>
+      <p>Air Sound does not collect personal data. There is no telemetry, crash reporting, or usage tracking in either app. The apps do not create an account or ask for an email address.</p>
+
+      <h2>This website</h2>
+      <p>This site is a static page hosted on GitHub Pages. It sets no cookies and runs no analytics. GitHub may process standard web request data, such as IP addresses, to serve the page. GitHub's own privacy terms apply to that hosting.</p>
+
+      <h2>Support</h2>
+      <p>If you open an issue on <a href="https://github.com/andyechc/air-sound/issues">GitHub</a>, the information you choose to include is visible there. It is used to answer the issue and for nothing else.</p>
+
+      <h2>Changes</h2>
+      <p>If this policy changes, the new version will be posted on this page with a new date.</p>
+
+      <a class="back" href="index.html">Back to Air Sound</a>
+    </article>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <img src="assets/icon-64.png" width="24" height="24" alt="">
+        <span>Air Sound</span>
+        <span class="footer-note">Mac audio, on your iPhone.</span>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/andyechc/air-sound">GitHub</a>
+        <a href="https://github.com/andyechc/air-sound/releases">Releases</a>
+        <a href="privacy.html" aria-current="page">Privacy</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

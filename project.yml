@@ -1,0 +1,68 @@
+name: AirSound
+
+options:
+  bundleIdPrefix: com.andyechc
+  createIntermediateGroups: true
+  defaultConfig: Debug
+
+packages:
+  AirSoundCore:
+    path: Packages/AirSoundCore
+
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    CODE_SIGN_STYLE: Automatic
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    GENERATE_INFOPLIST_FILE: true
+
+targets:
+  AirSoundMac:
+    type: application
+    platform: macOS
+    sources:
+      - path: MacApp
+        excludes:
+          - Info.plist
+    dependencies:
+      - package: AirSoundCore
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.andyechc.airsound.mac
+        INFOPLIST_FILE: MacApp/Info.plist
+        MACOSX_DEPLOYMENT_TARGET: "14.2"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+
+  AirSoundiPhone:
+    type: application
+    platform: iOS
+    sources:
+      - path: iPhoneApp
+        excludes:
+          - Info.plist
+    dependencies:
+      - package: AirSoundCore
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.andyechc.airsound.ios
+        INFOPLIST_FILE: iPhoneApp/Info.plist
+        TARGETED_DEVICE_FAMILY: "1"
+        IPHONEOS_DEPLOYMENT_TARGET: "17.0"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+
+schemes:
+  AirSoundMac:
+    build:
+      targets:
+        AirSoundMac: all
+    run:
+      config: Debug
+  AirSoundiPhone:
+    build:
+      targets:
+        AirSoundiPhone: all
+    run:
+      config: Debug

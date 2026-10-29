@@ -1,0 +1,499 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10DF3ABFA5FC86B4F4E1A722 /* MacModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFE86AD5FA18A6E667BF3DF /* MacModel.swift */; };
+		220A62E3EE7486BAA849A64D /* AudioSendServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E862E078459D7E91E0CD25 /* AudioSendServer.swift */; };
+		2EF771251B4CECD05FAEE88C /* MacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61BF4D68F177DE82D1C4679 /* MacApp.swift */; };
+		3A4E7992408B919B4A4C3162 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48C78677E0E8CD0851D6501B /* Assets.xcassets */; };
+		40E34DBE044D572D953A91EF /* MacDiscovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF010C144E0EC6C994B39B72 /* MacDiscovery.swift */; };
+		5CF411F572ABE84E929C030F /* SystemAudioTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BB3C53B31A80719BD3C0B2 /* SystemAudioTap.swift */; };
+		7B089AF47A50A5ECE185A3C6 /* IphoneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7599B52BBA467F5BFFD1C81 /* IphoneModel.swift */; };
+		94215B7868A7AF2C89F99055 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FE2C1945E3B351795CADC1 /* ContentView.swift */; };
+		A1BF3999526625E75B99B61D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6076248D9B5051133FF82573 /* Assets.xcassets */; };
+		AEE828E3520912389C06D940 /* AirSoundCore in Frameworks */ = {isa = PBXBuildFile; productRef = 4E2CE5E931994FF4322FC50D /* AirSoundCore */; };
+		B5605F0E17C30E56CAC39320 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFCDFDAC76FB48194799BFD /* ContentView.swift */; };
+		C7181B52596A342FC7311428 /* iPhoneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7C15DF7057E04B21B0F464 /* iPhoneApp.swift */; };
+		CFA10D9163FC693712486396 /* AudioPlaybackEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522E6E79D65F1F06F43A131E /* AudioPlaybackEngine.swift */; };
+		D5109905BF60834E3BE27292 /* MacConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFC0E6BEC0B77495EBBBCDB /* MacConnection.swift */; };
+		E4ABA76BCB65F511F169EF8F /* AirSoundCore in Frameworks */ = {isa = PBXBuildFile; productRef = 478D82BA3C6A15CB62AB8F24 /* AirSoundCore */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		15FE2C1945E3B351795CADC1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1B7C15DF7057E04B21B0F464 /* iPhoneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhoneApp.swift; sourceTree = "<group>"; };
+		457E5FEA0FC3BA2C8F88433A /* AirSoundiPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirSoundiPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		48C78677E0E8CD0851D6501B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		522E6E79D65F1F06F43A131E /* AudioPlaybackEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlaybackEngine.swift; sourceTree = "<group>"; };
+		52E862E078459D7E91E0CD25 /* AudioSendServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSendServer.swift; sourceTree = "<group>"; };
+		6076248D9B5051133FF82573 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6E7A24CB39BCCFF755AE13C3 /* AirSoundMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirSoundMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DFE86AD5FA18A6E667BF3DF /* MacModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacModel.swift; sourceTree = "<group>"; };
+		C7599B52BBA467F5BFFD1C81 /* IphoneModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IphoneModel.swift; sourceTree = "<group>"; };
+		C9BB3C53B31A80719BD3C0B2 /* SystemAudioTap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemAudioTap.swift; sourceTree = "<group>"; };
+		D76A3AB02D32E6F7DED7D9FF /* AirSoundCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AirSoundCore; path = Packages/AirSoundCore; sourceTree = SOURCE_ROOT; };
+		EF010C144E0EC6C994B39B72 /* MacDiscovery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacDiscovery.swift; sourceTree = "<group>"; };
+		F61BF4D68F177DE82D1C4679 /* MacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacApp.swift; sourceTree = "<group>"; };
+		FAFCDFDAC76FB48194799BFD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FCFC0E6BEC0B77495EBBBCDB /* MacConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacConnection.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		34F6C9E6A85E7567B628B769 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEE828E3520912389C06D940 /* AirSoundCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7CF519FBA261D5FE4659132 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4ABA76BCB65F511F169EF8F /* AirSoundCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		82117F342A76C22835F0485F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				457E5FEA0FC3BA2C8F88433A /* AirSoundiPhone.app */,
+				6E7A24CB39BCCFF755AE13C3 /* AirSoundMac.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A011662D27CB3C751627D6A5 /* MacApp */ = {
+			isa = PBXGroup;
+			children = (
+				6076248D9B5051133FF82573 /* Assets.xcassets */,
+				52E862E078459D7E91E0CD25 /* AudioSendServer.swift */,
+				FAFCDFDAC76FB48194799BFD /* ContentView.swift */,
+				F61BF4D68F177DE82D1C4679 /* MacApp.swift */,
+				8DFE86AD5FA18A6E667BF3DF /* MacModel.swift */,
+				C9BB3C53B31A80719BD3C0B2 /* SystemAudioTap.swift */,
+			);
+			path = MacApp;
+			sourceTree = "<group>";
+		};
+		A1267EA57D2146CE9BA0E630 = {
+			isa = PBXGroup;
+			children = (
+				A9C6602007C41F2E8EA4B8C9 /* iPhoneApp */,
+				A011662D27CB3C751627D6A5 /* MacApp */,
+				D9BF5B13603B9FD0CA0A1402 /* Packages */,
+				82117F342A76C22835F0485F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A9C6602007C41F2E8EA4B8C9 /* iPhoneApp */ = {
+			isa = PBXGroup;
+			children = (
+				48C78677E0E8CD0851D6501B /* Assets.xcassets */,
+				522E6E79D65F1F06F43A131E /* AudioPlaybackEngine.swift */,
+				15FE2C1945E3B351795CADC1 /* ContentView.swift */,
+				1B7C15DF7057E04B21B0F464 /* iPhoneApp.swift */,
+				C7599B52BBA467F5BFFD1C81 /* IphoneModel.swift */,
+				FCFC0E6BEC0B77495EBBBCDB /* MacConnection.swift */,
+				EF010C144E0EC6C994B39B72 /* MacDiscovery.swift */,
+			);
+			path = iPhoneApp;
+			sourceTree = "<group>";
+		};
+		D9BF5B13603B9FD0CA0A1402 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				D76A3AB02D32E6F7DED7D9FF /* AirSoundCore */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C79C13B9A4F17AAAF233F9E9 /* AirSoundMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E0F27B4353F141F087BF05A /* Build configuration list for PBXNativeTarget "AirSoundMac" */;
+			buildPhases = (
+				DCCEF7806F6F123F96A06981 /* Sources */,
+				96C729F354292734304F030F /* Resources */,
+				34F6C9E6A85E7567B628B769 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AirSoundMac;
+			packageProductDependencies = (
+				4E2CE5E931994FF4322FC50D /* AirSoundCore */,
+			);
+			productName = AirSoundMac;
+			productReference = 6E7A24CB39BCCFF755AE13C3 /* AirSoundMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D70CBD8E5D6C6102FE4C0A1B /* AirSoundiPhone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A01D85B4A3E7284E36341259 /* Build configuration list for PBXNativeTarget "AirSoundiPhone" */;
+			buildPhases = (
+				64F7700FF1B71E563D9A86CA /* Sources */,
+				407AB16DA71E62CC1CB1AFE9 /* Resources */,
+				C7CF519FBA261D5FE4659132 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AirSoundiPhone;
+			packageProductDependencies = (
+				478D82BA3C6A15CB62AB8F24 /* AirSoundCore */,
+			);
+			productName = AirSoundiPhone;
+			productReference = 457E5FEA0FC3BA2C8F88433A /* AirSoundiPhone.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42306CEEBC1BE77713226223 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					C79C13B9A4F17AAAF233F9E9 = {
+						ProvisioningStyle = Automatic;
+					};
+					D70CBD8E5D6C6102FE4C0A1B = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8EFF36321D02C69E44A383DA /* Build configuration list for PBXProject "AirSound" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = A1267EA57D2146CE9BA0E630;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				F71D2E062E5E5C102F7FCDC3 /* XCLocalSwiftPackageReference "Packages/AirSoundCore" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 82117F342A76C22835F0485F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C79C13B9A4F17AAAF233F9E9 /* AirSoundMac */,
+				D70CBD8E5D6C6102FE4C0A1B /* AirSoundiPhone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		407AB16DA71E62CC1CB1AFE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A4E7992408B919B4A4C3162 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96C729F354292734304F030F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1BF3999526625E75B99B61D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		64F7700FF1B71E563D9A86CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFA10D9163FC693712486396 /* AudioPlaybackEngine.swift in Sources */,
+				94215B7868A7AF2C89F99055 /* ContentView.swift in Sources */,
+				7B089AF47A50A5ECE185A3C6 /* IphoneModel.swift in Sources */,
+				D5109905BF60834E3BE27292 /* MacConnection.swift in Sources */,
+				40E34DBE044D572D953A91EF /* MacDiscovery.swift in Sources */,
+				C7181B52596A342FC7311428 /* iPhoneApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCCEF7806F6F123F96A06981 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				220A62E3EE7486BAA849A64D /* AudioSendServer.swift in Sources */,
+				B5605F0E17C30E56CAC39320 /* ContentView.swift in Sources */,
+				2EF771251B4CECD05FAEE88C /* MacApp.swift in Sources */,
+				10DF3ABFA5FC86B4F4E1A722 /* MacModel.swift in Sources */,
+				5CF411F572ABE84E929C030F /* SystemAudioTap.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2CA8C9F0AAE62EFBA7D7E591 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3PUM2552T9;
+				INFOPLIST_FILE = MacApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andyechc.airsound.mac;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4D77E40DF66E090D0273882E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5BA7D8E21AF109B32B903AE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		65D4BB22B8DEDF68C98AAB34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 3PUM2552T9;
+				INFOPLIST_FILE = iPhoneApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andyechc.airsound.ios;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		9C9104C8DE07A197ECDED9A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 3PUM2552T9;
+				INFOPLIST_FILE = iPhoneApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andyechc.airsound.ios;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		B9DE6BEE0A4DA52EBBEAD8AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3PUM2552T9;
+				INFOPLIST_FILE = MacApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andyechc.airsound.mac;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E0F27B4353F141F087BF05A /* Build configuration list for PBXNativeTarget "AirSoundMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CA8C9F0AAE62EFBA7D7E591 /* Debug */,
+				B9DE6BEE0A4DA52EBBEAD8AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8EFF36321D02C69E44A383DA /* Build configuration list for PBXProject "AirSound" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BA7D8E21AF109B32B903AE2 /* Debug */,
+				4D77E40DF66E090D0273882E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A01D85B4A3E7284E36341259 /* Build configuration list for PBXNativeTarget "AirSoundiPhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65D4BB22B8DEDF68C98AAB34 /* Debug */,
+				9C9104C8DE07A197ECDED9A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		F71D2E062E5E5C102F7FCDC3 /* XCLocalSwiftPackageReference "Packages/AirSoundCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/AirSoundCore;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		478D82BA3C6A15CB62AB8F24 /* AirSoundCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AirSoundCore;
+		};
+		4E2CE5E931994FF4322FC50D /* AirSoundCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AirSoundCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 42306CEEBC1BE77713226223 /* Project object */;
+}
