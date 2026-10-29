@@ -12,7 +12,7 @@ it receives.
 
 **Download:** [macOS app](https://github.com/andyechc/air-sound/releases/latest/download/AirSound-macOS.zip) ·
 [iPhone IPA for AltStore](https://github.com/andyechc/air-sound/releases/latest/download/AirSound-unsigned.ipa) ·
-[Website](https://andyechc.github.io/air-sound/)
+[Website](https://andyechc.is-a.dev/air-sound/)
 
 The macOS build is ad hoc signed, not notarized. On first launch, right-click
 the app and choose **Open**, or allow it under System Settings → Privacy &

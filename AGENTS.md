@@ -10,7 +10,7 @@ Two native apps (one macOS, one iOS) that stream the Mac's system audio to an iP
 - `MacApp/` — macOS sender: menu bar app (`LSUIElement`, `NSStatusItem` + `NSPopover`) whose Core Audio process tap feeds `AirSoundCore.PCMFIFO`, then Bonjour (`_airsound._tcp`) + TCP server (`NWListener`). Right-click menu stops/quits.
 - `iPhoneApp/` — iOS receiver: `NWBrowser` → `NWConnection` → `AudioPlaybackEngine` (AVAudioEngine + AVAudioPlayerNode).
 - `Packages/AirSoundCore/` — platform-neutral shared package: framing, `StreamSpec`, `PCMFIFO`. Has its own unit tests.
-- `docs/` — static GitHub Pages site (`main` / `docs`): landing page, privacy page, optimized screenshots, icons. English, no JS or analytics.
+- `docs/` — static GitHub Pages site (`main` / `docs`): landing page, privacy page, optimized screenshots, icons. English, no JS or analytics. Live at `https://andyechc.is-a.dev/air-sound/` because the account's user site carries that custom domain; `andyechc.github.io/air-sound` redirects there.
 - `Tools/make-icon.swift` — regenerates the app icon PNGs (iOS full-bleed 1024, macOS squircle in a transparent margin). Output is installed into both `Assets.xcassets/AppIcon.appiconset`; macOS sizes come from `sips` downscales of the 1024.
 
 ## Commands (verified on Xcode 27)
